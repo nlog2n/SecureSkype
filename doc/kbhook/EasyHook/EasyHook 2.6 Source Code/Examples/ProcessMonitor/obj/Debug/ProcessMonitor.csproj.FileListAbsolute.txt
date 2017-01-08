@@ -1,0 +1,7 @@
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x64\ProcessMonitor.exe
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x64\ProcessMonitor.pdb
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcessMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcessMonitor\obj\Debug\ProcessMonitor.Form1.resources
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcessMonitor\obj\Debug\ProcessMonitor.csproj.GenerateResource.Cache
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcessMonitor\obj\Debug\ProcessMonitor.exe
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcessMonitor\obj\Debug\ProcessMonitor.pdb

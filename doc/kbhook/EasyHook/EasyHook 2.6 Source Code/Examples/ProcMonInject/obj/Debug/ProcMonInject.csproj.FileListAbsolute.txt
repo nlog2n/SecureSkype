@@ -1,0 +1,5 @@
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x64\ProcMonInject.dll
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x64\ProcMonInject.pdb
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcMonInject\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcMonInject\obj\Debug\ProcMonInject.dll
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Examples\ProcMonInject\obj\Debug\ProcMonInject.pdb

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "keyexe", "keyexe\Keyexe.vcproj", "{DB28834E-2D02-447A-A93D-BEB57E384B24}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6282998-FE8F-4BE9-9056-59C371452DE0} = {C6282998-FE8F-4BE9-9056-59C371452DE0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "keydll", "keydll\keydll.vcproj", "{C6282998-FE8F-4BE9-9056-59C371452DE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB28834E-2D02-447A-A93D-BEB57E384B24}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB28834E-2D02-447A-A93D-BEB57E384B24}.Debug|Win32.Build.0 = Debug|Win32
+		{DB28834E-2D02-447A-A93D-BEB57E384B24}.Release|Win32.ActiveCfg = Release|Win32
+		{DB28834E-2D02-447A-A93D-BEB57E384B24}.Release|Win32.Build.0 = Release|Win32
+		{C6282998-FE8F-4BE9-9056-59C371452DE0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6282998-FE8F-4BE9-9056-59C371452DE0}.Debug|Win32.Build.0 = Debug|Win32
+		{C6282998-FE8F-4BE9-9056-59C371452DE0}.Release|Win32.ActiveCfg = Release|Win32
+		{C6282998-FE8F-4BE9-9056-59C371452DE0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

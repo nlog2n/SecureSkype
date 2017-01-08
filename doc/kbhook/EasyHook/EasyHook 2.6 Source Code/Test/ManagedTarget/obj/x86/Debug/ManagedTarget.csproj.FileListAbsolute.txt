@@ -1,0 +1,7 @@
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x86\ManagedTarget.exe
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x86\ManagedTarget.pdb
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Test\ManagedTarget\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Test\ManagedTarget\obj\x86\Debug\ManagedTarget.Properties.Resources.resources
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Test\ManagedTarget\obj\x86\Debug\ManagedTarget.csproj.GenerateResource.Cache
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Test\ManagedTarget\obj\x86\Debug\ManagedTarget.exe
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Test\ManagedTarget\obj\x86\Debug\ManagedTarget.pdb

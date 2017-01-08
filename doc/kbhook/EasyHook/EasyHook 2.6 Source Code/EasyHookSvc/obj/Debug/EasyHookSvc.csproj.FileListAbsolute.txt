@@ -1,0 +1,5 @@
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x64\EasyHookSvc.exe
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\Debug\x64\EasyHookSvc.pdb
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\EasyHookSvc\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\EasyHookSvc\obj\Debug\EasyHookSvc.exe
+C:\Users\fanghui\Dropbox\SafeSkype\kbhook\EasyHook\EasyHook 2.6 Source Code\EasyHookSvc\obj\Debug\EasyHookSvc.pdb

@@ -1,0 +1,62 @@
+如何hook keyboard, mouse,and window?
+
+关键在于 SetWindowsHookEx 函数
+
+
+窗口：
+handle = SetWindowsHookEx( WH_CALLWNDPROC, HookProc,...);
+鼠标：
+handle = SetWindowsHookEx( WH_MOUSE, HookProc,...);
+键盘: 
+handle = SetWindowsHookEx( WH_KEYBOARD, HookProc,...);
+
+
+撤销
+
+UnhookWindowsHookEx(handle);
+
+
+回调函数定义：
+
+LRESULT CALLBACK HookProc(
+  int nCode, 
+  WPARAM wParam, 
+  LPARAM lParam
+)
+{
+   // process event
+   ...
+
+   return CallNextHookEx(NULL, nCode, wParam, lParam); // 调用下一个钩子
+}
+
+
+//取得模块句柄
+GetModuleHandle(string lpModuleName);
+
+//寻找目标进程窗口
+FindWindow(string lpClassName,string lpWindowName);
+
+//设置进程窗口到最前
+bool SetForegroundWindow(IntPtr hWnd);
+
+//模拟键盘事件
+keybd_event(Byte bVk, Byte bScan, Int32 dwFlags, Int32 dwExtraInfo);
+
+
+这些函数都在系统的USER32.dll里面。
+ 
+
+关于C#下的全局钩子：
+直接提供的有 WH_MOUSE_LL, WH_KEYBOARD_LL， 其他的不能直接使用，需要DLL injection.参见
+   // Note: Global hooks are not supported in the .NET Framework 
+        // except for the WH_KEYBOARD_LL low-level hook and the WH_MOUSE_LL low-level hook
+
+        // We can use SetWindowsHookEx method to set a WH_CALLWNDPROC hook. 
+        // By setting a hook Windows will automatically Loads our hook dll to all processes. 
+        // But the problem with this method is, we don’t know the target process is .NET or not. 
+        // So we have to write a native dll for this hook operation. Because if the target process 
+        // is not .NET this means there is no CLR attached to that process and our .NET dll won’t 
+        // be worked within this process. When we call SetWindowsHookEx function systems attach the dll, 
+        // which contains the hook method, to all processes. At this point; you have to know that 
+        // for each process, system creates a new instance of our dll and attach it to every process. 

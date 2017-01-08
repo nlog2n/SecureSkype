@@ -1,0 +1,44 @@
+c#下skype api 开发总结
+
+Skype4COm 
+    Skype has a COM API called Skype4COM which you could use through COM interop in     order to access Skype.
+    The main skype download site is no longer live, here is a mirror:
+    https://sites.google.com/site/appanalyzecomponent/skype4com
+
+    only works when Skype is installed on client system and running as well,
+
+Skypekit 
+    http://www.codeproject.com/Articles/330778/Skypekit-NET
+    doesn't need skype installed 
+    SkypeKit uses IKVM to convert the Skype Class in their ready-made Java Classes into a .NET 'skypekit' class. IKVM is a tool that is used to convert Java Applications to .NET Executables (.exe) and Assemblies (.dll).
+
+
+SEHE -Skype Event Handler Example
+    C# Project Example Using Skype4COM and API
+    http://code.msdn.microsoft.com/SEHE
+    demonstrates how to interface to Skype API/Skype4COM but shows how to attach and deal with authorization with the Skype client as well as open a default browser window to download Skype if needed, for users who have your application but do not have Skype installed.
+
+
+
+
+==========
+Just to point out here. After downloading the Skype4COM.dll you will probably need to use regsvr32 to register the dll, that way inside Visual Studio you can add the .dll as a recognised COM Component!
+
+regsvr32 C:\Windows\System32\Skype4COM.dll
+
+for example, you will get a popup indicating it successfully registered it, and now back in your IDE, inside the Add Reference under the COM Tab you will see the Skype Library.
+
+unregister command:
+
+regsvr32 -u <path>\<filename>.dll
+
+有说Has the COM DLL been registered? How are you setting up your reference? In order to use your COM reference you need to select it from the COM tab in the Add Reference dialog rather than selecting the DLL file from the Browse tab.
+但是如果已经安装Skype软件，则在目录 C:\Program Files\Common Files\Skype下可以发现已有Skype4COM.dll.
+此时直接在Visual Studio中引用也可以！
+引用后生成Interop.SKYPE4COMLib.dll(176KB)，直接用这个dll也可以。
+另外例子Skype_C_Sharp_Example_By_ZOverLord同时也保留了release version for Interop.SKYPE4COMLib.dll(152KB)。
+
+============
+Skype does not offer an 64 bit compatible library。 该SKype4COM.dll只适用 windows 32-bit，因此必须在工程文件中将Any CPU改成 x86编译！
+否则出现如下运行错误：
+Retrieving the COM class factory for component with CLSID {830690FC-BF2F-47A6-AC2D-330BCB402664} failed due to the following error: 80040154

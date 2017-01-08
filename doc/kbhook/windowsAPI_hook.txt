@@ -1,0 +1,41 @@
+Windows API functions hook
+
+1. MadCodeHook
+   C++. 支持32/64 windows Win98-Win8.1。
+
+http://www.madshi.net/
+
+
+2. Detours:
+   微软出，C++, 免费许可仅针对x86应用程序， x64不免费
+   只支持Win XP及以上，不支持 Win9X
+
+微软Detours库由微软的Galen Hunt 和Doug Brubacher开发，1999年7月1日发表在论文《Detours: Binary Interception of Win32 Functions》上。其原理是改写函数头至少5个字节（因为一般函数开头都是保存栈环境的三条指令共5个字节：8b ff 55 8b ec）为一条跳转指令，直接跳转到自己的函数开头，从而实现API拦截。其实现为原生代码C++语言。由于微软Detour钩子引擎免费许可仅针对x86应用程序，所以要对x64应用程序生效得选用其它库，比如diStorm64，其原理见Powerful x86/x64 Mini Hook-Engine。
+
+Detours库是以源码形式提供的，这给我们的使用带来极大的方便。你可以选择把它编译成库、也可以直接把源码加入工程……形式使用.
+
+http://research.microsoft.com/en-us/projects/detours/
+
+
+
+ 
+3. EasyHook
+
+免费.由Detours基础上发展而来。2.6版本 stable
+    支持全部类型的进程
+    完美支持64位进程以及目标
+    支持托管以及非托管级别的代码调用以及HOOK
+    提供了两种模式的注入管理。一种是托管代码的注入，另一种是非托管代码的注入
+    开放全部源码，可以学习修改，提取甚至静态编译
+    驱动级选项，认真读文档会知道他可以选择性的使用驱动程序来提升本身的权限
+    拥有强大的API可以检测到目标进程或系统进程是否为64位
+    注入时可针对64位和32位做不同的接口
+
+
+随着.NET框架的日益流行，EasyHook库提供了一种从托管环境hook非托管代码的方法，教程阐述了使用方法。
+
+EasyHook库完整源码显示其最关键的一段代码是Trampoline_ASM_x86/x64这段代码中给定的跳转地址。作者借助IDA Pro 5.0反汇编Ildasm.exe生成目录DriverShared\ASM下主要核心汇编代码。见文件HookSpecific_x86.asm中的public Trampoline_ASM_x86@0和HookSpecific_x64.asm中的public Trampoline_ASM_x64。然后目录DriverShared\LocalHook中的install.c调用它.
+可见，EasyHook库也是跳转了5或6(JMP，E9，不被64位模式所支持)个指令。
+
+EasyHook库中的示例ProcessMonitor能hook勾选中文件CreateFileW操作。
+
