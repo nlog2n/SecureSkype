@@ -1,26 +1,26 @@
 # SecureSkype
-End-to-end encryption plugin for Skype communications
-
 SecureSkype is an end-to-end encryption plugin to protect Skype communications. Currently it only supports encryption on texting and attached files.
+
+
+## Quick Start
+1. Start Skype program and get logged in;
+2. Choose a conversation window in Skype
+3. Start SafeSkype program, and configure tokens for friends by clicking “Setting” button;
+4. In setting window, type remote user display name and related token. 
+5. Click “OK” and return to SafeSkype window. 
+6. Click “Start” button to enable protection. Or again click “Stop” to disable encryption.
+
+
+## Important notes 
+-	If switching to another conversation in Skype, one must stop the existing plugin and restart.
+-	If “Start” button is clicked directly without pre-setting, SafeSkype will use default token ( and save it ) 
+
+
 
 ## v2.0
 New release fixed the following issues:
 -	corrected token setting for local-remote user pair. When started, local user must either set a new token or use default one.
 -	added detection for current conversation. Plugin will not start if no active conversation found.
-
-
-Quick start:
-1.	Start Skype program and get logged in;
-2.	Choose a conversation window in Skype
-3.	Start SafeSkype program, and configure tokens for friends by clicking “Setting” button;
-4.	In setting window, type remote user display name and related token. 
-5.	Click “OK” and return to SafeSkype window. 
-6.	Click “Start” button to enable protection. Or again click “Stop” to disable encryption.
-
-
-Important notes: 
--	If switching to another conversation in Skype, one must stop the existing plugin and restart.
--	If “Start” button is clicked directly without pre-setting, SafeSkype will use default token ( and save it ) 
 
 
 ## v1.2
