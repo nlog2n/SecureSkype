@@ -11,7 +11,7 @@ SecureSkype is an end-to-end encryption plugin to protect Skype communications. 
 6. Click “Start” button to enable protection. Or again click “Stop” to disable encryption.
 
 
-## Important notes 
+## Important Notes 
 -	If switching to another conversation in Skype, one must stop the existing plugin and restart.
 -	If “Start” button is clicked directly without pre-setting, SafeSkype will use default token ( and save it ) 
 
